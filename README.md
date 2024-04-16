@@ -32,3 +32,13 @@
 
 <br />
 
+
+### Practicum 3
+
+"Let's run our next.js project, and see what happens?"
+
+![Screenshot](assets-report/03.png)
+
+<br />
+
+
