@@ -42,3 +42,44 @@
 <br />
 
 
+### Assignment (Practicum Questions)
+
+"1. What does this code import { useEffect } from "react"; do in the pages/_app.tsx file? explain"
+
+    It is used to set desired global effects, such as managing global data subscriptions, setting layout changes, or performing certain actions each time the app is reloaded.
+<br />
+
+"2. If in the pages/_app.tsx file we don't use useEffect (delete line 3, and lines 9-11, what will happen?"
+
+    Line 3      : Deleting the useEffect import will cause the code that uses the useEffect to not run, as the useEffect is no longer imported into the file.
+    Line 9-11   : Then Bootstrap may not load, and if the application some functionality of bootstrap may not work properly.
+<br />
+
+"3. Why in react/nextjs the html tag for class must be changed to className?"
+
+    Since class is a keyword in JavaScript, className is used to assign CSS classes to elements in JSX to match valid JavaScript syntax.
+<br />
+
+"4. Can the store in nextjs store many redux reducers?"
+
+    Yes, we can .... Redux is typically used to manage application state globally, including storing multiple reducers that manage specific parts of the application state.
+<br />
+
+"5. Explain the use of the store.js file!"
+
+    The store.js file is commonly used to organize a Redux store in an application. It typically includes creating the Redux store, connecting middleware if needed, and combining reducers into one root reducer to be stored in the store.
+<br />
+
+"6. In the pages/login.tsx file, what does this code mean?
+    const { isLogin } = useSelector((state) => state.auth);"
+
+    This function is used to determine whether the user is logged in or not.
+    This code uses Redux's useSelector hook to retrieve a part of the state stored in the Redux store, in this case the auth section. It extracts the isLogin value from the auth section of the Redux state and stores it in the isLogin variable. 
+<br />
+
+"7. In the pages/counter.tsx file, what does this code mean?
+    const { totalCounter } = useSelector((state) => state.counter);"
+
+    This function is used to display the total number of counts in the counter component.
+    This code also uses Redux's useSelector hook to retrieve the totalCounter value from the counter section of the Redux state and store it in the totalCounter variable. 
+<br />
